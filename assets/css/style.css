@@ -1,0 +1,58 @@
+.container-class {
+    @apply h-[100vh] w-[100%] bg-[#333] mx-auto flex items-center justify-center flex-wrap;
+}
+
+.music-player {
+    @apply bg-[#f59527] w-[400px] py-[25px] px-[35px] text-center;
+}
+
+.nav-bar {
+    @apply flex justify-between mb-[30px];
+}
+
+.circle {
+  @apply size-10 rounded-full leading-[40px] bg-[#fff] text-[#000];
+  box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.photo {
+    @apply w-[220px] rounded-full border-[8px] border-solid border-[#fff] overflow-hidden inline-block;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.photo img {
+    @apply size-[100%] object-cover;
+}
+
+.music {
+    @apply text-[20px] font-normal mt-[20px] text-[#333]
+}
+
+.singer {
+    @apply font-normal text-[#333]
+}
+
+#progress {
+    -webkit-appearance: none;
+    @apply w-full h-[6px] bg-[#fff] rounded-[4px] cursor-pointer -my-[40px]
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    @apply bg-[#f59527] size-[30px] rounded-full border-[8px] border-solid border-[#fff];
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.controls {
+    @apply flex items-center justify-center gap-[30px]
+}
+
+.control-btn {
+    @apply size-[60px] bg-[#fff] text-[#000] inline-flex items-center justify-center rounded-full cursor-pointer mt-[20px];
+    box-shadow: 0 5px 10px rgba(24, 5, 5, 0.22);
+}
+
+.control-btn:nth-child(2) {
+   @apply scale-[1.2] bg-[#fff] text-black
+    
+}
